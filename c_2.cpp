@@ -8,7 +8,7 @@ double fn(double x)
 
 int main()
 {
-    int x1,x2;
+    double x1,x2;
     cin>>x1>>x2;
     
     double step = 0.1;
