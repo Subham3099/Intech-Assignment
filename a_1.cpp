@@ -30,7 +30,7 @@ int main()
             if(consecutive>0)
             {
                 ans += ch;
-                ans += (consecutive + '0');
+                ans += to_string(consecutive);
             }
             
             ch = a;
@@ -41,9 +41,10 @@ int main()
     if(consecutive>0)
     {
         ans += ch;
-        ans += (consecutive + '0');
+        ans += to_string(consecutive);
     }
 
-    cout<<ans;
+    cout<<"Input : "<<s<<endl;
+    cout<<"Output: "<<ans;
     return 0;
 }
