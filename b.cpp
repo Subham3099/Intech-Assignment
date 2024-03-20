@@ -56,6 +56,17 @@ Node* GetMidNode(Node* head)
 
     return slow;
 }
+void prl(Node* head)
+{
+    Node* tmp = head;
+    
+    while(tmp)
+    {
+        cout<<tmp->val<<" ";
+        tmp = tmp->next;
+    }
+    cout<<endl;
+}
 int main()
 {
     int n;
@@ -64,10 +75,11 @@ int main()
     Node* head = makeLinkedList(n);
     
     // Now we have a Linked List off size n Starting pointer at head
+    cout<<"Input : "<<n<<endl;
+    prl(head);
     
     Node * mid = GetMidNode(head);
     
-    cout<<mid->val;
+    cout<<"Output : "<<mid->val;
     
 }
-
